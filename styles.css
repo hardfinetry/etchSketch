@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: min(90vw, 600px);
+    height: min(90vw, 600px);
+}
+
+#container div {
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+    border: 1px solid black;
+}
